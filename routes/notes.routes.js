@@ -39,7 +39,8 @@ noteController.post('/products', async(req , res) =>{
 
     try{
         await product.save()
-        res.send("product create")
+        res.json({message :"product create"})
+        // res.send("product create")
     }
     catch(err){
         res.send("something went wrong")
