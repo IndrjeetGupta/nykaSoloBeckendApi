@@ -38,7 +38,7 @@ noteController.post('/products', async(req , res) =>{
     })
 
     try{
-        await product.save()
+        await product.send()
         res.send("product create")
     }
     catch(err){
